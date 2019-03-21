@@ -1,23 +1,25 @@
-import { html } from './html.js';
+import { hts } from './html.js';
 
+console.time("factorial test");
 function handler(...props) {
   console.log(props);
 }
 
 const name = 'Andrzej';
 
-const elem1 = html`
+const HomePage = hts`
   <h1>test</h1>
-  <button>Dwa</button>
+  <button onclick=${handler}>Dwa</button>
 `;
 
-const elem = html`
+const elem = hts`
   <div>
     ${name}
-    ${elem1}
-    <button onclick=${handler}>Siema</button>
+    ${HomePage}
+    <button onclick=${handler}>${name}</button>
     <input onkeypress=${handler}>
   </div>
 `;
 
 document.body.appendChild(elem);
+console.timeEnd("factorial test");
