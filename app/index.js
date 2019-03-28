@@ -1,25 +1,22 @@
 import { hts } from './html.js';
 
-console.time("factorial test");
-function handler(...props) {
-  console.log(props);
+const handler = (...props) => {
+  console.log(props)
 }
 
-const name = 'Andrzej';
-
-const HomePage = hts`
-  <h1>test</h1>
-  <button onclick=${handler}>Dwa</button>
+const code = hts`
+  <blockquote>
+    This is awesome!
+  </blockquote>
 `;
 
 const elem = hts`
-  <div>
-    ${name}
-    ${HomePage}
-    <button onclick=${handler}>${name}</button>
-    <input onkeypress=${handler}>
-  </div>
+  <section>
+    <h1>HTML in JS</h1>
+    <span>Next level UI builder</span>
+    ${code}
+    <button class="btn" onClick=${handler}>Download (1.5kb)</button>
+  </section>
 `;
 
 document.body.appendChild(elem);
-console.timeEnd("factorial test");

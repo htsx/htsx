@@ -1,3 +1,24 @@
-.test {
-    color: #ccc;
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+blockquote {
+    font-family: 'Courier', sans-serif;
+    background: #f1f1f1f1;
+    color: #888;
+    margin: 12px 0;
+    padding: 12px;
+    min-width: 400px;
+}
+
+.btn {
+    display: block;
+    background: blue;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
 }
