@@ -1,6 +1,6 @@
 # **HTS**
 ##### Build UI's with native HTML in JS.
-- The whole package is just `1.5kb` minified
+- The whole package is just `932 bytes`! minified, gzipped and has 0 dependencies
 - Rendering 1000 test elements takes about `25ms` which is ***~21x faster than JSX*** (540ms) 🚀
 - It's not wrapping or parsing anything, it's native *HTML* in your *JavaScript*.
 
@@ -76,7 +76,7 @@ All native event types are supported: `onclick`, `onchange`, `onkeyup`, `onkeypr
 ### Nested elements
 With `hts` you can simply compose your elements:
 ```
-consy HelloElement = hts`
+const HelloElement = hts`
     <span>Hey!</span>
 `;
 
