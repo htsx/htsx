@@ -4,9 +4,18 @@
   "description": "Build UI's with native HTML in JS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./node_modules/http-server/bin/http-server"
+    "test": "node ./node_modules/jest/bin/jest",
+    "lint": "node ./node_modules/eslint/bin/eslint ./"
   },
   "author": "Michal Jach",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.2",
+    "babel-jest": "^24.5.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "jest": "^24.5.0"
+  }
 }
