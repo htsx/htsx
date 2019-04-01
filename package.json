@@ -1,14 +1,14 @@
 {
-  "name": "clin",
+  "name": "hts",
   "version": "1.0.0",
-  "description": "",
+  "description": "Build UI's with native HTML in JS.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./node_modules/http-server/bin/http-server"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Michal Jach",
+  "license": "MIT",
   "devDependencies": {
     "http-server": "^0.11.1"
   }
