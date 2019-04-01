@@ -4,7 +4,7 @@ let toAppend = {};
 HTMLElement.prototype._addEventListener = HTMLElement.prototype.addEventListener;
 HTMLElement.prototype.addEventListener = function(event, handler){
   this._addEventListener(event, handler); 
-  if(!this.listeners) { this.listeners = [] };
+  if(!this.listeners) { this.listeners = [] }
   this.listeners.push({ event, handler });
 };
 
