@@ -1,4 +1,4 @@
-# **HTS**
+# **HTS** [![Build Status](https://travis-ci.org/michaljach/hts.svg?branch=master)](https://travis-ci.org/michaljach/hts)
 ##### Build UI's with native HTML in JS.
 - The whole package is just `932 bytes`! minified, gzipped and has 0 dependencies
 - Rendering 1000 test elements takes about `25ms` which is ***~21x faster than JSX*** (540ms) 🚀
