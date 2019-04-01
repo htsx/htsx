@@ -5,6 +5,9 @@
 - It's not wrapping or parsing anything, it's native *HTML* in your *JavaScript*.
 
 # Example
+
+Live demo: [Codepen.io demo](https://codepen.io/michaljach/project/editor/DYGzJV)
+
 ```
 const info = 'This is awesome!';
 const handler = () => {};
