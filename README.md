@@ -1,5 +1,5 @@
 # **HTS** [![Build Status](https://travis-ci.org/michaljach/hts.svg?branch=master)](https://travis-ci.org/michaljach/hts)
-##### Build UI's with native HTML in JS.
+##### Build UIs with native HTML in JS.
 - The whole package is just `932 bytes`! minified, gzipped and has 0 dependencies
 - Rendering 1000 test elements takes about `25ms` which is ***~21x faster than JSX*** (540ms) 🚀
 - It's not wrapping or parsing anything, it's native *HTML* in your *JavaScript*.
@@ -27,9 +27,9 @@ document.body.appendChild(elem);
 # Usage
 You can use HTS everywhere you want.
 - In node or browser:
-    ```import { hts } from 'hts';```
+    ```import hts from 'hts';```
 - In modern browser (without any build tool):
-    ```import { hts } from './hts.min.js';```
+    ```import hts from './hts.min.js';```
 
 And start creating your UI with `hts` template literal.
 
@@ -61,7 +61,7 @@ const handler = (event) => {
 };
 
 const button = hts`
-    <button onclick={handler}>Click me!</button>
+    <button onclick=${handler}>Click me!</button>
 `;
 ```
 or with your parameters
@@ -71,7 +71,7 @@ const handler = (param, event) => {
 };
 
 const button = hts`
-    <button onclick={handler.bind(this, 'foo')}>Click me!</button>
+    <button onclick=${handler.bind(this, 'foo')}>Click me!</button>
 `;
 ```
 All native event types are supported: `onclick`, `onchange`, `onkeyup`, `onkeypress`.
