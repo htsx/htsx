@@ -58,6 +58,9 @@ const attachEvents = (nodes) => {
       createListener(element, 'onClick', 'click');
       createListener(element, 'onKeyPress', 'keypress');
       createListener(element, 'onKeyUp', 'keyup');
+      createListener(element, 'onChange', 'onchange');
+      createListener(element, 'onMouseOver', 'onmouseover');
+      createListener(element, 'onMouseOut', 'onmouseout');
       appendNodes(element);
     }
 
