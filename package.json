@@ -1,6 +1,6 @@
 {
   "name": "htsx",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Build UI's with native HTML in JS.",
   "main": "index.js",
   "scripts": {
