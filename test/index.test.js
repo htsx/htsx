@@ -1,4 +1,4 @@
-import hts from '../src/index.esm';
+const hts = require('../dist/htsx.esm.min');
 
 test('renders text correctly', () => {
   expect(hts`test`.innerHTML).toEqual('test');
