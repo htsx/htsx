@@ -3,5 +3,8 @@
   "env": {
     "browser": true,
     "jest": true
-  }
+  },
+  "globals": {
+    "htsx": "writable"
+  } 
 }

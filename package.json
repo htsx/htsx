@@ -2,7 +2,7 @@
   "name": "htsx",
   "version": "1.0.4",
   "description": "Build UI's with native HTML in JS.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "node ./node_modules/jest/bin/jest",
     "lint": "node ./node_modules/eslint/bin/eslint ./"

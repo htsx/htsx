@@ -1,4 +1,4 @@
-import hts from '../index';
+import hts from '../src/index.esm';
 
 test('renders text correctly', () => {
   expect(hts`test`.innerHTML).toEqual('test');
