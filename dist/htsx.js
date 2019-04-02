@@ -1,4 +1,4 @@
-const events = {};
+(function(g,f){typeof exports==='object'&&typeof module!=='undefined'?module.exports=f():typeof define==='function'&&define.amd?define(f):(g=g||self,g.htsx=f());}(this,function(){'use strict';const events = {};
 const toAppend = {};
 
 HTMLElement.prototype.addEventListenerProxy = HTMLElement.prototype.addEventListener;
@@ -74,7 +74,7 @@ const attachEvents = (nodes) => {
   return wrapper;
 };
 
-export default (strings, ...props) => {
+var index = (strings, ...props) => {
   const string = strings.map((partial, i) => {
     const id = Date.now() + i;
     switch (typeof props[i]) {
@@ -91,4 +91,4 @@ export default (strings, ...props) => {
 
   const nodes = new DOMParser().parseFromString(string, 'text/html').body.childNodes;
   return attachEvents(nodes);
-};
+};return index;}));
