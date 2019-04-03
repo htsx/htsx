@@ -1,6 +1,6 @@
 {
   "name": "htsx",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Build UI's with native HTML in JS.",
   "main": "dist/htsx.js",
   "module": "dist/htsx.js",
@@ -12,11 +12,8 @@
   "author": "Michal Jach",
   "license": "MIT",
   "devDependencies": {
-    "@babel/plugin-external-helpers": "^7.2.0",
     "@babel/preset-env": "^7.4.2",
     "babel-jest": "^24.5.0",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-preset-es2015": "^6.24.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",

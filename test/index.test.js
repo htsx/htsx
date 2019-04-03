@@ -1,17 +1,17 @@
-const hts = require('../dist/htsx.esm.min');
+import htsx from '../src/index';
 
 test('renders text correctly', () => {
-  expect(hts`test`.innerHTML).toEqual('test');
+  expect(htsx`test`.innerHTML).toEqual('test');
 });
 
 test('renders property correctly', () => {
   const name = 'Me';
-  expect(hts`${name}`.innerHTML).toEqual('Me');
+  expect(htsx`${name}`.innerHTML).toEqual('Me');
 });
 
 test('fires button event correctly', () => {
   const handler = jest.fn();
-  const elem = hts`<button onclick=${handler}>Button</button>`;
+  const elem = htsx`<button onclick=${handler}>Button</button>`;
   elem.firstElementChild.click();
   expect(elem.firstElementChild.listeners.length).toEqual(1);
   expect(handler).toHaveBeenCalledTimes(1);
@@ -20,7 +20,7 @@ test('fires button event correctly', () => {
 
 test('fires button event correctly with params', () => {
   const handler = jest.fn();
-  const elem = hts`<button onclick=${handler.bind(this, 'foo')}>Button</button>`;
+  const elem = htsx`<button onclick=${handler.bind(this, 'foo')}>Button</button>`;
   elem.firstElementChild.click();
   expect(elem.firstElementChild.listeners.length).toEqual(1);
   expect(handler).toHaveBeenCalledTimes(1);
@@ -29,7 +29,7 @@ test('fires button event correctly with params', () => {
 
 test('fires input multiple event correctly with params', () => {
   const handler = jest.fn();
-  const elem = hts`<input onkeypress=${handler.bind(this, 'press')} onkeyup=${handler.bind(this, 'up')}>`;
+  const elem = htsx`<input onkeypress=${handler.bind(this, 'press')} onkeyup=${handler.bind(this, 'up')}>`;
   const keyboardEvent = document.createEvent('KeyboardEvent');
   const keyboardEvent2 = document.createEvent('KeyboardEvent');
   const initMethod = typeof keyboardEvent.initKeyboardEvent !== 'undefined' ? 'initKeyboardEvent' : 'initKeyEvent';
@@ -69,24 +69,24 @@ test('fires input multiple event correctly with params', () => {
 });
 
 test('renders nested element correctly', () => {
-  const elem = hts`elem`;
-  expect(hts`${elem}`.innerHTML).toEqual('<div><div>elem</div></div>');
+  const elem = htsx`elem`;
+  expect(htsx`${elem}`.innerHTML).toEqual('<div><div>elem</div></div>');
 });
 
 test('renders array correctly', () => {
   const data = ['foo', 'bar'];
-  expect(hts`${data}`.innerHTML).toEqual('<div>foobar</div>');
+  expect(htsx`${data}`.innerHTML).toEqual('<div>foobar</div>');
 });
 
 test('renders loop of elements correctly', () => {
-  const elem = hts`elem`;
-  expect(hts`${[1, 2].map(() => elem)}`.innerHTML).toEqual('<div><div>elem</div><div>elem</div></div>');
+  const elem = htsx`elem`;
+  expect(htsx`${[1, 2].map(() => elem)}`.innerHTML).toEqual('<div><div>elem</div><div>elem</div></div>');
 });
 
 test('renders loop of elements with events correctly', () => {
   const handler = jest.fn();
-  const elem = hts`<button onclick=${handler}>Button</button>`;
+  const elem = htsx`<button onclick=${handler}>Button</button>`;
   elem.firstElementChild.click();
-  expect(hts`${[1, 2].map(() => elem)}`.innerHTML).toEqual('<div><div><button>Button</button></div><div><button>Button</button></div></div>');
+  expect(htsx`${[1, 2].map(() => elem)}`.innerHTML).toEqual('<div><div><button>Button</button></div><div><button>Button</button></div></div>');
   expect(handler).toHaveBeenCalledTimes(1);
 });
