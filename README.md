@@ -31,12 +31,14 @@ You can use HTSX everywhere you want.
     ```import htsx from 'htsx';```
 - In modern browser (without any build tool):
     ```import htsx from './htsx.min.js';```
+- Or via script tag:
+    ```<script src="htsx.min.js"></script>```
 
 And start creating your UI with `htsx` template literal.
 
 # API
 ### Elements
-`htsx` is not *like* HTML, **it is HTML**. You can use any tag you want with all html properties.
+`htsx` is not *like* HTML, **it is HTML**. You can use any tag you want with all html attributes.
 ```
 const elem = htsx`
     <h1>Hello!</h1>
