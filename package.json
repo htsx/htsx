@@ -1,9 +1,9 @@
 {
   "name": "htsx",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Build UI's with native HTML in JS.",
-  "main": "dist/htsx.js",
-  "module": "dist/htsx.js",
+  "main": "dist/htsx.min.js",
+  "module": "dist/htsx.esm.min.js",
   "scripts": {
     "test": "node ./node_modules/jest/bin/jest",
     "lint": "node ./node_modules/eslint/bin/eslint ./",
