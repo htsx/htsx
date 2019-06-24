@@ -1,4 +1,4 @@
-# **HTSX** [![Build Status](https://travis-ci.org/michaljach/hts.svg?branch=master)](https://travis-ci.org/michaljach/hts) [![NPM](https://img.shields.io/npm/v/htsx.svg)](https://www.npmjs.com/package/htsx) 
+# **HTSX** [![Build Status](https://travis-ci.org/michaljach/htsx.svg?branch=master)](https://travis-ci.org/michaljach/htsx)
 
 ##### Build UIs with native HTML in JS.
 - The whole package is just `932 bytes`! minified, gzipped and has 0 dependencies
