@@ -7,6 +7,31 @@
 - It's not wrapping or parsing anything, it's native _HTML_ in your _JavaScript_.
 - Full Typescript support
 
+# Install
+
+```
+npm install htsx
+```
+
+or with Yarn:
+
+```
+yarn install htsx
+```
+
+# Usage
+
+You can use HTSX everywhere you want.
+
+- In node or browser:
+  `import htsx from 'htsx';`
+- In modern browser (without any build tool):
+  `import htsx from './htsx.min.js';`
+- Or via script tag:
+  `<script src="htsx.min.js"></script>`
+
+And start creating your UI with `htsx` template literal.
+
 # Example
 
 Live demo: [Codepen.io demo](https://codepen.io/michaljach/project/editor/DYGzJV)
@@ -26,19 +51,6 @@ const Component = htsx`
 
 document.body.appendChild(Component);
 ```
-
-# Usage
-
-You can use HTSX everywhere you want.
-
-- In node or browser:
-  `import htsx from 'htsx';`
-- In modern browser (without any build tool):
-  `import htsx from './htsx.min.js';`
-- Or via script tag:
-  `<script src="htsx.min.js"></script>`
-
-And start creating your UI with `htsx` template literal.
 
 # API
 
