@@ -1,4 +1,4 @@
-# **HTSX** [![Build Status](https://travis-ci.org/michaljach/htsx.svg?branch=master)](https://travis-ci.org/michaljach/htsx)
+# **HTSX** [![Actions Status](https://github.com/michaljach/htsx/workflows/Build/badge.svg)](https://github.com/michaljach/htsx/actions)
 
 ##### Build UIs with native HTML in JS.
 
