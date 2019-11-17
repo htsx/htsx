@@ -24,6 +24,10 @@ function attachEvents(nodes: NodeList, events: Events, components: Components): 
         node.parentElement.replaceChild(component, node);
       }
     }
+
+    if (node.childNodes) {
+      attachEvents(node.childNodes, events, components);
+    }
   });
 }
 
