@@ -1,0 +1,29 @@
+{
+  "name": "htsx",
+  "version": "1.2.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Michal Jach <michal@jach.me>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -cw",
+    "lint": "eslint ./src --ext .js,.ts"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.19.1",
+    "rollup": "^1.27.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-typescript2": "^0.25.2",
+    "typescript": "^3.7.2"
+  }
+}
